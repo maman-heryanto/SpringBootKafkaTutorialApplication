@@ -22,7 +22,7 @@ public class JsonKafkaProcedur {
 
     public void sendMessage(User data){
 
-        LOGGER.info(String.format("Message Send -> %s",data.toString()));
+        LOGGER.info(String.format("Json Message Send -> %s",data.toString()));
 
         Message<User> message = MessageBuilder
                 .withPayload(data)
